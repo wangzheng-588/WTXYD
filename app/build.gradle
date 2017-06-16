@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.wz.wtxyd"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.6.0'
+    compile 'com.jakewharton:butterknife-compiler:8.6.0'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    //retrofit2
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    //rxjava
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //dagger
+    compile 'com.google.dagger:dagger:2.11-rc2'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11-rc2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.18'
+    //下拉刷新上拉加载
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    //rxcache
+    compile 'com.github.VictorAlbertos.RxCache:runtime:1.8.0-2.x'
+    compile 'com.github.VictorAlbertos.Jolyglot:gson:0.0.3'
+    compile 'com.jaydenxiao:ExpandableTextView:1.0.0'
+    compile files('src/main/lib/juniversalchardet-1.0.3.jar')
+    //rxpermissions
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile files('src/main/lib/Msc.jar')
+    compile files('src/main/lib/Sunflower.jar')
+}

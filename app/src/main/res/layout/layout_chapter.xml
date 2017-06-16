@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_gravity="start"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+        android:background="#ECE0CD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/tv_chapter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="鬼吹灯"/>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <Button
+                android:background="@drawable/chapter_btn_chapter_bg_selector"
+                android:id="@+id/btn_chapter"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="目录"/>
+
+            <Button
+                android:id="@+id/btn_label"
+                android:layout_width="0dp"
+                android:background="@drawable/chapter_btn_label_bg_selector"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="书签"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+  <android.support.v7.widget.RecyclerView
+      android:padding="8dp"
+      android:id="@+id/recycler_view"
+      android:layout_below="@id/linear_layout"
+      android:background="#E4D2B8"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_marginTop="8dp"
+            android:text="正在获取目录,请稍候．．．"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

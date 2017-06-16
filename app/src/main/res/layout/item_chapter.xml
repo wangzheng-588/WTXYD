@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:padding="8dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <View
+        android:background="#440000"
+        android:layout_width="5dp"
+        android:layout_height="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_chapter_name"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:text="目录一"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

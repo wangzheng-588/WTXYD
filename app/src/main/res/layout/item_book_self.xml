@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    >
+
+
+    <TextView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/book_blue"
+        android:gravity="right|bottom"
+        android:padding="5dp"
+        android:text="TXT"
+        android:textColor="@color/white"
+        />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="鬼吹灯"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_auth"
+            android:textColor="#787878"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天下霸唱"
+            />
+
+
+
+        <TextView
+            android:textColor="#787878"
+            android:id="@+id/tv_is_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未读"
+            />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_is_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="20170712"
+            android:visibility="gone"
+            />
+
+
+        <CheckBox
+            android:id="@+id/cb_self"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="reading_default_text_size">25dp</dimen>
+    <dimen name="readingMarginWidth">5dp</dimen>
+    <dimen name="readingMarginHeight">25dp</dimen>
+    <dimen name="reading_status_margin_bottom">5dp</dimen>
+    <dimen name="reading_line_spacing">5dp</dimen>
+    <dimen name="reading_paragraph_spacing">5dp</dimen>
+    <dimen name="reading_max_text_size">25dp</dimen>
+    <dimen name="reading_board_battery_border_width">5dp</dimen>
+</resources>
